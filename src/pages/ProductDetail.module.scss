@@ -1,0 +1,237 @@
+.productDetail {
+    padding: 2rem 0;
+    min-height: 80vh;
+    position: relative;
+  
+    .breadcrumbs {
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+      
+      span {
+        margin: 0 0.5rem;
+        cursor: pointer;
+        
+        &:first-child {
+          margin-left: 0;
+        }
+        
+        &:hover {
+          text-decoration: underline;
+          color: #2a77e7;
+        }
+      }
+    }
+    
+    .productContent {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+    }
+    
+    .productImage {
+      flex: 1;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f9f9f9;
+      
+      img {
+        max-width: 100%;
+        max-height: 400px;
+        object-fit: contain;
+      }
+    }
+    
+    .productInfo {
+      flex: 1;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .productName {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+    
+    .productPrice {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #3a1504;
+      margin-bottom: 1rem;
+    }
+    
+    .availability {
+      margin-bottom: 1.5rem;
+      
+      .inStock {
+        color: #28a745;
+        background-color: rgba(40, 167, 69, 0.1);
+        padding: 0.3rem 0.8rem;
+        border-radius: 4px;
+        font-weight: 500;
+      }
+      
+      .outOfStock {
+        color: #dc3545;
+        background-color: rgba(220, 53, 69, 0.1);
+        padding: 0.3rem 0.8rem;
+        border-radius: 4px;
+        font-weight: 500;
+      }
+    }
+    
+    .description {
+      margin-bottom: 2rem;
+      
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+        color: #333;
+      }
+      
+      p {
+        line-height: 1.6;
+        color: #555;
+      }
+    }
+    
+    .actions {
+      margin-top: auto;
+    }
+    
+    .quantityControl {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      
+      label {
+        margin-right: 1rem;
+        font-weight: 500;
+      }
+      
+      input {
+        width: 60px;
+        height: 40px;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 1rem;
+        
+        &:focus {
+          outline: none;
+          border-color: #2a77e7;
+        }
+      }
+    }
+    
+    .addToCartButton {
+      background-color: #3d1d05;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      width: 100%;
+      
+      &:hover {
+        background-color: darken(#02c754, 10%);
+      }
+      
+      &:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+    }
+    
+    .loadingContainer, .errorContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 400px;
+      text-align: center;
+      padding: 2rem;
+    }
+    
+    .loader {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #2a77e7;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 1rem;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    .button {
+      background-color: #2a77e7;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 1rem;
+      
+      &:hover {
+        background-color: darken(#2a77e7, 10%);
+      }
+    }
+    
+    .prescriptionUpload {
+      margin-bottom: 1.5rem;
+      
+      .prescriptionNote {
+        margin-bottom: 0.5rem;
+        color: #dc3545;
+        font-weight: 500;
+      }
+      
+      .fileUploadLabel {
+        display: block;
+        background-color: #f8f9fa;
+        border: 1px dashed #ced4da;
+        border-radius: 4px;
+        padding: 0.8rem;
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.3s;
+        
+        &:hover {
+          background-color: #e9ecef;
+        }
+      }
+      
+      .fileInput {
+        display: none;
+      }
+      
+      .requiredField {
+        color: #dc3545;
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }

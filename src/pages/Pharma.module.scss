@@ -1,0 +1,159 @@
+@import "../assets/styles/variables";
+
+.pharma_page {
+  margin: 125px 0;
+  
+  .header {
+    text-align: center;
+    margin-bottom: 3rem;
+    
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      color: $Black;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      font-size: 1.2rem;
+      color: $DarkGray;
+    }
+  }
+
+  .medicine_section {
+    margin-bottom: 4rem;
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.25rem;
+      color: $Black;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid $LightGray;
+    }
+  }
+  
+  .medicines_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .medicine_card {
+    display: flex;
+    flex-direction: column;
+    background-color: $White;
+    border: 1px solid $LightGray;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      
+      .image_container img {
+        transform: scale(1.05);
+      }
+    }
+    
+    .image_container {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+    }
+    
+    .medicine_info {
+      padding: 1.5rem;
+      
+      h3 {
+        font-family: 'Cinzel', serif;
+        font-size: 1.5rem;
+        color: $Black;
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        color: $DarkGray;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+      }
+      
+      .item_count {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: $LightGray;
+        color: $DarkGray;
+        border-radius: 2rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  
+  // Responsive adjustments
+  @media screen and (max-width: 768px) {
+    margin: 100px 0;
+    
+    .header {
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    .medicine_section h2 {
+      font-size: 2rem;
+    }
+    
+    .medicines_grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .header {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .medicine_section h2 {
+      font-size: 1.75rem;
+    }
+    
+    .medicines_grid {
+      grid-template-columns: 1fr;
+      padding: 0.5rem;
+    }
+    
+    .medicine_card {
+      .image_container {
+        height: 180px;
+      }
+      
+      .medicine_info {
+        h3 {
+          font-size: 1.25rem;
+        }
+
+        p {
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+}

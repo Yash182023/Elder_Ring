@@ -1,11 +1,38 @@
 // color
-$PrimaryColor: #ff0092;
-$SecondaryColor: #ff0075;
-$White: #eceff1;
-$LightGray: #e5e9ec;
-$Gray: #cfd8dc;
-$DarkGray: #2a373d;
-$Black: #0a0d0e;
+// $PrimaryColor: #ff0092;
+// $SecondaryColor: #ff0075;
+// $White: #eceff1;
+// $LightGray: #e5e9ec;
+// $Gray: #cfd8dc;
+// $DarkGray: #2a373d;
+// $Black: #0a0d0e;
 
-$LightGray50: #e5e9ec50;
-$Gray30: #cfd8dc30;
+// $LightGray50: #e5e9ec50;
+// $Gray30: #cfd8dc30;
+// _variables.scss
+// Primary Colors
+$PrimaryColor: #8B4513;    // Warm brown
+$SecondaryColor: #654321;  // Darker brown
+$White: #FFFAF0;          // Floral white
+$LightGray: #E8E5DE;      // Vintage paper
+$Gray: #9B8579;           // Warm gray
+$DarkGray: #463E3F;       // Deep warm gray
+$Black: #2A2522;          // Soft black
+
+// Transparent versions
+$LightGray50: rgba(255, 255, 255, 0.5);
+$Gray30: rgba(155, 133, 121, 0.3);
+
+// Typography
+$FontSize: 18px;          // Larger base font size
+$LineHeight: 1.6;         // Increased line height
+$HeaderFont: 'Cinzel', serif;
+$BodyFont: 'Cinzel', serif;
+
+// Spacing
+$Spacing: 1.5rem;
+$HeaderHeight: 6rem;      // Increased header height for better tap targets
+
+// Other
+$BorderRadius: 0.5rem;
+$BoxShadow: 2px 2px 8px rgba(0, 0, 0, 0.15);

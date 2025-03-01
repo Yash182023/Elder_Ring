@@ -13,11 +13,11 @@ export interface ProductDataProps {
 export const productData: ProductDataProps[] = [
   {
     id: 1,
-    title: "T-Shirt 1",
+    title: "WheelChair",
     description: "Vintage Retro? T-shirt",
     price: 24.99,
     images: {
-      preview: "image/products/Product-01-Preview.png",
+      preview: "/image/Prodlist/Mobility/img_2.jpg",
       model: [
         "image/products/Product-01-Model-01.png",
         "image/products/Product-01-Model-02.png",
@@ -28,11 +28,11 @@ export const productData: ProductDataProps[] = [
   },
   {
     id: 2,
-    title: "T-Shirt 2",
+    title: "Mover_1",
     description: "Just Vibin' T-shirt",
     price: 24.99,
     images: {
-      preview: "image/products/Product-02-Preview.png",
+      preview: "/image/Prodlist/Mobility/img_3.jpg",
       model: [
         "image/products/Product-02-Model-01.png",
         "image/products/Product-02-Model-02.png",
@@ -43,11 +43,11 @@ export const productData: ProductDataProps[] = [
   },
   {
     id: 3,
-    title: "T-Shirt 3",
+    title: "Mover_2",
     description: "Soft Bold T-shirt",
     price: 9.99,
     images: {
-      preview: "image/products/Product-03-Preview.png",
+      preview: "/image/Prodlist/Mobility/img_4.jpg",
       model: [
         "image/products/Product-03-Model-01.png",
         "image/products/Product-03-Model-02.png",
@@ -58,11 +58,11 @@ export const productData: ProductDataProps[] = [
   },
   {
     id: 4,
-    title: "T-Shirt 4",
+    title: "Win Cold",
     description: "Psyco T-shirt",
     price: 9.99,
     images: {
-      preview: "image/products/Product-04-Preview.png",
+      preview: "/image/Pharma/Cold.jpg",
       model: [
         "image/products/Product-04-Model-01.png",
         "image/products/Product-04-Model-02.png",
@@ -73,11 +73,11 @@ export const productData: ProductDataProps[] = [
   },
   {
     id: 5,
-    title: "T-Shirt 5",
+    title: "Elevated_seat",
     description: "Secrets T-shirt",
     price: 9.99,
     images: {
-      preview: "image/products/Product-05-Preview.png",
+      preview: "/image/Prodlist/Safetyaids/img_2.jpg",
       model: [
         "image/products/Product-05-Model-01.png",
         "image/products/Product-05-Model-02.png",
@@ -88,11 +88,11 @@ export const productData: ProductDataProps[] = [
   },
   {
     id: 6,
-    title: "T-Shirt 6",
+    title: "AntiSlipmat",
     description: "Destiny The choice is yours T-shirt",
     price: 19.9,
     images: {
-      preview: "image/products/Product-06-Preview.png",
+      preview: "/image/Prodlist/Safetyaids/img_3.jpg",
       model: [
         "image/products/Product-06-Model-01.png",
         "image/products/Product-06-Model-02.png",
@@ -103,11 +103,11 @@ export const productData: ProductDataProps[] = [
   },
   {
     id: 7,
-    title: "T-Shirt 7",
+    title: "GrabBar",
     description: "Destiny T-shirt",
     price: 19.99,
     images: {
-      preview: "image/products/Product-07-Preview.png",
+      preview: "/image/Prodlist/Safetyaids/img_4.jpg",
       model: [
         "image/products/Product-07-Model-01.png",
         "image/products/Product-07-Model-02.png",
@@ -118,11 +118,11 @@ export const productData: ProductDataProps[] = [
   },
   {
     id: 8,
-    title: "T-Shirt 8",
+    title: "Diaper",
     description: "Destiny is waiting T-shirt",
     price: 19.99,
     images: {
-      preview: "image/products/Product-08-Preview.png",
+      preview: "/image/Prodlist/Wellness/img_2.png",
       model: [
         "image/products/Product-08-Model-01.png",
         "image/products/Product-08-Model-02.png",
@@ -133,11 +133,11 @@ export const productData: ProductDataProps[] = [
   },
   {
     id: 9,
-    title: "T-Shirt 9",
+    title: "Wipe",
     description: "Instinct  The choice is yours T-shirt",
     price: 29.9,
     images: {
-      preview: "image/products/Product-09-Preview.png",
+      preview: "/image/Prodlist/Wellness/img_2.jpg",
       model: [
         "image/products/Product-09-Model-01.png",
         "image/products/Product-09-Model-02.png",
@@ -148,11 +148,11 @@ export const productData: ProductDataProps[] = [
   },
   {
     id: 10,
-    title: "T-Shirt 10",
+    title: "BhgavadGita",
     description: "Warrior The choice is yours T-shirt",
     price: 29.9,
     images: {
-      preview: "image/products/Product-10-Preview.png",
+      preview: "/image/Prodlist/Home/img_2.jpg",
       model: [
         "image/products/Product-10-Model-01.png",
         "image/products/Product-10-Model-02.png",
@@ -163,11 +163,11 @@ export const productData: ProductDataProps[] = [
   },
   {
     id: 11,
-    title: "T-Shirt 11",
+    title: "Oven",
     description: "Galaxy T-shirt",
     price: 19.9,
     images: {
-      preview: "image/products/Product-11-Preview.png",
+      preview: "/image/Prodlist/Home/img_3.jpg",
       model: [
         "image/products/Product-11-Model-01.png",
         "image/products/Product-11-Model-02.png",
@@ -178,11 +178,11 @@ export const productData: ProductDataProps[] = [
   },
   {
     id: 12,
-    title: "T-Shirt 12",
+    title: "Paracetamol",
     description: "Intuition T-shirt",
     price: 19.9,
     images: {
-      preview: "image/products/Product-12-Preview.png",
+      preview: "/image/Pharma/Pain.jpg",
       model: [
         "image/products/Product-12-Model-01.png",
         "image/products/Product-12-Model-02.png",
@@ -193,11 +193,11 @@ export const productData: ProductDataProps[] = [
   },
   {
     id: 13,
-    title: "T-Shirt 13",
+    title: "Furniture",
     description: "Intuition The choice is yours T-shirt",
     price: 24.99,
     images: {
-      preview: "image/products/Product-13-Preview.png",
+      preview: "/image/Prodlist/Home/img_4.jpg",
       model: [
         "image/products/Product-13-Model-01.png",
         "image/products/Product-13-Model-02.png",
@@ -208,11 +208,11 @@ export const productData: ProductDataProps[] = [
   },
   {
     id: 14,
-    title: "T-Shirt 14",
+    title: "KitchenWare",
     description: "Beauty World T-shirt",
     price: 14.99,
     images: {
-      preview: "image/products/Product-14-Preview.png",
+      preview: "/image/Prodlist/Home/img_5.jpg",
       model: [
         "image/products/Product-14-Model-01.png",
         "image/products/Product-14-Model-02.png",
@@ -223,11 +223,11 @@ export const productData: ProductDataProps[] = [
   },
   {
     id: 15,
-    title: "T-Shirt 15",
+    title: "BPmonitor",
     description: "Isolated T-shirt",
     price: 14.99,
     images: {
-      preview: "image/products/Product-15-Preview.png",
+      preview: "/image/Prodlist/Devices/img_3.jpg",
       model: [
         "image/products/Product-15-Model-01.png",
         "image/products/Product-15-Model-02.png",

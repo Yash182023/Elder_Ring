@@ -1,3 +1,44 @@
+// @import "variables";
+
+// ::selection {
+//   color: $White;
+//   background-color: $PrimaryColor;
+// }
+
+// body {
+//   font-family: "Prompt", sans-serif;
+//   background-color: $White;
+//   overflow-x: hidden;
+// }
+
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button {
+//   -webkit-appearance: none;
+//   margin: 0;
+// }
+
+// * {
+//   color: $Black;
+// }
+
+// .container {
+//   width: 100vw;
+//   padding: 0 4rem;
+
+//   @media screen and (max-width: 780px) {
+//     padding: 0 2rem;
+//   }
+
+//   @media screen and (max-width: 425px) {
+//     padding: 0 1rem;
+//   }
+// }
+
+// .content {
+//   margin-top: 5.5rem;
+// }
+
+// style.scss
 @import "variables";
 
 ::selection {
@@ -6,9 +47,15 @@
 }
 
 body {
-  font-family: "Prompt", sans-serif;
+  font-family: $BodyFont;
+  font-size: $FontSize;
+  line-height: $LineHeight;
   background-color: $White;
   overflow-x: hidden;
+  
+  // Better text rendering
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 input::-webkit-outer-spin-button,
@@ -21,19 +68,87 @@ input::-webkit-inner-spin-button {
   color: $Black;
 }
 
+// Improved container responsiveness
 .container {
-  width: 100vw;
-  padding: 0 4rem;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 $Spacing * 2;
+
 
   @media screen and (max-width: 780px) {
-    padding: 0 2rem;
+    padding: 0 $Spacing;
   }
 
   @media screen and (max-width: 425px) {
-    padding: 0 1rem;
+    padding: 0 $Spacing * 0.75;
   }
 }
 
+// Adjusted content spacing
 .content {
-  margin-top: 5.5rem;
+  margin-top: $HeaderHeight;
+  padding: $Spacing 0;
+}
+
+// Enhanced Typography
+h1, h2, h3, h4, h5, h6 {
+  font-family: $HeaderFont;
+  margin-bottom: $Spacing;
+  color: $Black;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+
+// Better link styles
+a {
+  color: $PrimaryColor;
+  
+  &:hover {
+    color: $SecondaryColor;
+  }
+  
+  &:focus {
+    outline: 3px solid $SecondaryColor;
+    outline-offset: 2px;
+  }
+}
+
+// Button styles
+button {
+  font-family: $BodyFont;
+  font-size: 1.1rem;
+  padding: $Spacing * 0.75;
+  border-radius: $BorderRadius;
+  border: 2px solid $PrimaryColor;
+  background-color: $PrimaryColor;
+  color: $White;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: $SecondaryColor;
+    border-color: $SecondaryColor;
+  }
+  
+  &:focus {
+    outline: 3px solid $SecondaryColor;
+    outline-offset: 2px;
+  }
+}
+
+// Enhanced form elements
+input, select, textarea {
+  font-size: 1.1rem;
+  padding: $Spacing * 0.75;
+  border: 2px solid $Gray;
+  border-radius: $BorderRadius;
+  background-color: $White;
+  
+  &:focus {
+    border-color: $PrimaryColor;
+    outline: none;
+  }
 }
